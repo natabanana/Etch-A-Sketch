@@ -1,0 +1,21 @@
+
+html {
+    font-size: 62.5%;
+    font-family: 'Caveat', cursive, Arial, Helvetica, sans-serif
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    background:plum; 
+}
+
+
+#title {
+    padding: 20px;
+    align-self: center;
+    font-size: 6rem;
+    font-weight:900;  
+    
+}
