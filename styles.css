@@ -17,5 +17,8 @@ body {
     align-self: center;
     font-size: 6rem;
     font-weight:900;  
-    
+}
+
+#sketchPad {
+    flex-direction: row;
 }
