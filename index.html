@@ -7,20 +7,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Etch-A-Sketch</title>
 </head>
 <body>
     
-<h1 id="title" >Etch-A-Sketch</h1>
 
-<div id="sketchPad">
+
+<div id="sketchPadContainer">
+
+    <h1 id="title" >Etch-A-Sketch</h1>
+    
     <div id="buttons">
         <button id="resetButton">Clear All </button>
+        <button id="black">Black </button>
+        <button id="black">Rainbow </button>
     </div>
     
-    <div id="canvas">
+    <div>
+        <input type="text" placeholder="Canvas size" val="16">
+        <button>Change Canvas Size</button>
     </div>
+
+    <div id="canvas"></div>
 </div>
 
 <script type="text/javascript" src="main.js" ></script>
