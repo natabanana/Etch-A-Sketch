@@ -1,23 +1,25 @@
 
-let gridSize = 16
 
+function canvasSize (size) {
 
-let canvas = document.getElementById("canvas")
-canvas.style.cssText = "display: grid; grid-template-columns: repeat(16, 1fr); grid-template-rows: repeat(16, 1fr); justify-content:center";
-canvas.style.height = "100vh"
+    let gridSize = `${size}`
 
-//16x16 grid of square divs
-const rowSize = gridSize
-const colSize = gridSize
+    let canvas = document.getElementById("canvas")
+    canvas.style.cssText = `display: grid; grid-template-columns: repeat(${size}, 1fr); grid-template-rows: repeat(${size}, 1fr); justify-content:center`;
+    canvas.style.height = "100vh"
 
-for (let i = 0; i < gridSize; i++) {
-    for (let j = 0; j < gridSize; j++) {
-        let square = document.createElement("div")
-        square.classList.add("hoverCell");
-        square.style.cssText = "background: white; border: 1px solid black;"
-        canvas.appendChild(square)
+    for (let i = 0; i < gridSize; i++) {
+        for (let j = 0; j < gridSize; j++) {
+            let square = document.createElement("div")
+            square.classList.add("hoverCell");
+            square.style.cssText = "background: white; border: 1px solid black;"
+            canvas.appendChild(square)
+        }
     }
+
 }
+
+canvasSize(4)
 
 
 let canvasSquares = document.querySelectorAll(".hoverCell")
