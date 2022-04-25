@@ -19,7 +19,24 @@ function canvasSize (size) {
 
 }
 
-canvasSize(4)
+
+
+function changeSize (newSize) {
+    let changeSizeBtn = document.getElementById("changeSizeBtn")
+    newSize = document.getElementById("userInput").value;
+    if (newSize < 2 || newSize > 100) {
+        alert("Enter a value between 2 and 100")
+
+    }
+    else if (isNaN(newSize) == true) {alert("Enter a number")}
+
+    else {
+        changeSizeBtn.addEventListener("click", canvasSize(newSize))
+    }
+    
+    
+}
+
 
 
 let canvasSquares = document.querySelectorAll(".hoverCell")

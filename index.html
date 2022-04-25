@@ -18,7 +18,7 @@
 <div id="sketchPadContainer">
 
     <h1 id="title" >Etch-A-Sketch</h1>
-    
+
     <div id="buttons">
         <button id="resetButton">Clear All </button>
         <button id="black">Black </button>
@@ -26,8 +26,8 @@
     </div>
     
     <div>
-        <input type="text" placeholder="Canvas size" val="16">
-        <button>Change Canvas Size</button>
+        <input id="userInput" type="text" placeholder="Canvas size" value="16" />
+        <button id="changeSizeBtn" onclick="changeSize()" >Change Canvas Size</button>
     </div>
 
     <div id="canvas"></div>
